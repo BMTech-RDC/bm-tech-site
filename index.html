@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BM Tech — Entreprise technologique africaine spécialisée en développement web, applications, intelligence artificielle et solutions digitales pour entreprises en RDC et Cameroun.">
+  <meta name="keywords" content="développement web Afrique, applications web RDC, solutions digitales Cameroun, intelligence artificielle Afrique, ERP Afrique centrale, BM Tech">
+  <meta property="og:title" content="BM Tech | Innover. Développer. Transformer.">
+  <meta property="og:description" content="Entreprise technologique africaine — solutions web, IA, cybersécurité et logiciels métier.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bm-tech.online">
+  <title>BM Tech | Innover. Développer. Transformer.</title>
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <header class="navbar-wrapper" id="navbar">
+    <nav class="navbar container">
+
+      <!-- LOGO -->
+      <a href="index.html" class="logo" aria-label="BM Tech — Accueil">
+        <div class="logo-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4 6H16C19.3 6 22 8.7 22 12C22 13.8 21.2 15.4 20 16.5C21.5 17.6 22.5 19.4 22.5 21.5C22.5 24.8 19.8 27.5 16.5 27.5H4V6Z" fill="white"/>
+            <path d="M4 16.5H15.5C16.6 16.5 17.5 17.4 17.5 18.5C17.5 19.6 16.6 20.5 15.5 20.5H4V16.5Z" fill="#1565D8"/>
+            <path d="M25 6L30 16L35 6" stroke="#4FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M30 16V28" stroke="#1565D8" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">BM Tech</span>
+          <span class="logo-tagline">Innover. Développer. Transformer.</span>
+        </div>
+      </a>
+
+      <!-- NAV LINKS -->
+      <ul class="nav-links" id="nav-links" role="navigation" aria-label="Navigation principale">
+        <li><a href="index.html" class="nav-link active">Accueil</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="about.html" class="nav-link">À propos</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- NAV ACTIONS -->
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Langue">
+          <button class="lang-btn active" onclick="setLanguage('fr')" aria-pressed="true">FR</button>
+          <button class="lang-btn" onclick="setLanguage('en')" aria-pressed="false">EN</button>
+        </div>
+        <a href="contact.html" class="btn btn-primary nav-cta">Demander un devis</a>
+      </div>
+
+      <!-- HAMBURGER -->
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-overlay" id="mobile-overlay" onclick="toggleMenu()"></div>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Animated background grid -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <!-- Glow orbs -->
+    <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-content">
+
+        <!-- Badge -->
+        <div class="hero-badge" data-reveal>
+          <span class="badge-dot"></span>
+          <span id="badge-text">Entreprise technologique africaine · RDC & Cameroun</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-title" data-reveal data-delay="1">
+          <span id="hero-line1">Nous transformons</span><br>
+          <span class="hero-title--accent" id="hero-line2">vos idées</span><br>
+          <span id="hero-line3">en solutions digitales</span>
+        </h1>
+
+        <!-- Subline -->
+        <p class="hero-sub" data-reveal data-delay="2" id="hero-sub">
+          Développement web &amp; mobile, intelligence artificielle, cybersécurité et logiciels métier — des solutions conçues pour les entreprises et entrepreneurs africains.
+        </p>
+
+        <!-- CTA -->
+        <div class="hero-cta" data-reveal data-delay="3">
+          <a href="contact.html" class="btn btn-primary btn-lg" id="hero-btn-primary">Démarrer un projet</a>
+          <a href="services.html" class="btn btn-ghost btn-lg" id="hero-btn-secondary">Découvrir nos services</a>
+        </div>
+
+        <!-- Trust signals -->
+        <div class="hero-trust" data-reveal data-delay="4">
+          <div class="trust-item">
+            <strong>+20</strong>
+            <span id="trust-1">Projets livrés</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item">
+            <strong>+10</strong>
+            <span id="trust-2">Clients satisfaits</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item">
+            <strong>2</strong>
+            <span id="trust-3">Pays couverts</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero visual -->
+      <div class="hero-visual" data-reveal data-delay="2" aria-hidden="true">
+        <div class="hero-card hero-card--main">
+          <div class="hcard-header">
+            <div class="hcard-dots">
+              <span style="background:#FF5F57"></span>
+              <span style="background:#FFBD2E"></span>
+              <span style="background:#28CA41"></span>
+            </div>
+            <span class="hcard-title">bm-tech.online</span>
+          </div>
+          <div class="hcard-body">
+            <div class="code-line"><span class="c-kw">const</span> <span class="c-var">solution</span> <span class="c-op">=</span> <span class="c-fn">bmtech</span><span class="c-pu">.</span><span class="c-fn">build</span><span class="c-pu">({</span></div>
+            <div class="code-line indent"><span class="c-key">type</span><span class="c-pu">:</span> <span class="c-str">'web-app'</span><span class="c-pu">,</span></div>
+            <div class="code-line indent"><span class="c-key">target</span><span class="c-pu">:</span> <span class="c-str">'Afrique centrale'</span><span class="c-pu">,</span></div>
+            <div class="code-line indent"><span class="c-key">quality</span><span class="c-pu">:</span> <span class="c-str">'world-class'</span><span class="c-pu">,</span></div>
+            <div class="code-line indent"><span class="c-key">ai</span><span class="c-pu">:</span> <span class="c-bool">true</span></div>
+            <div class="code-line"><span class="c-pu">});</span></div>
+            <div class="code-line mt">&nbsp;</div>
+            <div class="code-line typing"><span class="c-cm">// ✓ Projet lancé avec succès</span></div>
+          </div>
+        </div>
+        <!-- Floating badges -->
+        <div class="hero-float hero-float--1">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#4FA3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>IA intégrée</span>
+        </div>
+        <div class="hero-float hero-float--2">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#28CA41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Sécurisé</span>
+        </div>
+        <div class="hero-float hero-float--3">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#FFBD2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Rapide</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════ -->
+  <section class="section services-section" id="services">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div class="section-label" id="svc-label">Nos Solutions</div>
+        <h2 class="section-title" id="svc-title">Des technologies au service<br>de votre croissance</h2>
+        <p class="section-sub" id="svc-sub">Nous accompagnons les entreprises et entrepreneurs dans leur transformation digitale — de la conception à la mise en production.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card reveal" data-delay="0">
+          <div class="scard-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="scard-title" id="svc1-title">Sites &amp; Applications Web</h3>
+          <p class="scard-desc" id="svc1-desc">Sites vitrines, e-commerce, plateformes SaaS et dashboards — développés avec les standards actuels, optimisés SEO et adaptés mobile.</p>
+          <a href="services.html#web" class="scard-link" id="svc1-link">
+            <span>En savoir plus</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card reveal" data-delay="1">
+          <div class="scard-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="scard-title" id="svc2-title">Intelligence Artificielle</h3>
+          <p class="scard-desc" id="svc2-desc">Chatbots intelligents, automatisation de processus métier, analyse de données et intégration d'IA dans vos systèmes existants.</p>
+          <a href="services.html#ia" class="scard-link" id="svc2-link">
+            <span>En savoir plus</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card reveal" data-delay="2">
+          <div class="scard-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="scard-title" id="svc3-title">Cybersécurité</h3>
+          <p class="scard-desc" id="svc3-desc">Audit de sécurité, mise en place de bonnes pratiques, HTTPS, sauvegardes et protection de vos données et systèmes numériques.</p>
+          <a href="services.html#cyber" class="scard-link" id="svc3-link">
+            <span>En savoir plus</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card reveal" data-delay="3">
+          <div class="scard-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9 17H5a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M14 21l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="scard-title" id="svc4-title">Logiciels Métier (ERP / CRM)</h3>
+          <p class="scard-desc" id="svc4-desc">Systèmes de gestion sur mesure : ERP, CRM, gestion scolaire, gestion commerciale — adaptés aux réalités des entreprises africaines.</p>
+          <a href="services.html#erp" class="scard-link" id="svc4-link">
+            <span>En savoir plus</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card reveal" data-delay="4">
+          <div class="scard-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3 class="scard-title" id="svc5-title">Produits SaaS</h3>
+          <p class="scard-desc" id="svc5-desc">Conception et développement de solutions SaaS propriétaires — des actifs technologiques durables et évolutifs pour votre entreprise.</p>
+          <a href="services.html#saas" class="scard-link" id="svc5-link">
+            <span>En savoir plus</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card reveal" data-delay="5">
+          <div class="scard-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="scard-title" id="svc6-title">Conseil &amp; Transformation Digitale</h3>
+          <p class="scard-desc" id="svc6-desc">Accompagnement stratégique pour choisir et mettre en œuvre les bonnes solutions numériques selon votre secteur et vos objectifs.</p>
+          <a href="services.html#conseil" class="scard-link" id="svc6-link">
+            <span>En savoir plus</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+      </div>
+
+      <div class="section-cta reveal">
+        <a href="services.html" class="btn btn-outline" id="svc-cta">Voir tous nos services</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       WHY BM TECH
+  ═══════════════════════════════════════════ -->
+  <section class="section why-section">
+    <div class="container">
+      <div class="why-inner reveal">
+
+        <div class="why-content">
+          <div class="section-label" id="why-label">Pourquoi BM Tech ?</div>
+          <h2 class="section-title" id="why-title">Une tech company africaine,<br>pas une simple agence</h2>
+          <p class="section-sub" id="why-sub">Nous ne nous contentons pas de créer des sites web. Nous construisons des solutions technologiques durables, conçues pour évoluer avec votre entreprise.</p>
+
+          <ul class="why-list">
+            <li class="why-item">
+              <div class="why-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/></svg>
+              </div>
+              <div>
+                <strong id="why1-title">Solutions adaptées à l'Afrique</strong>
+                <p id="why1-desc">Conçues pour les réalités locales : connectivité variable, paiement mobile, langues et cultures.</p>
+              </div>
+            </li>
+            <li class="why-item">
+              <div class="why-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/></svg>
+              </div>
+              <div>
+                <strong id="why2-title">Standards techniques mondiaux</strong>
+                <p id="why2-desc">Code propre, sécurisé, performant et maintenable — aux mêmes standards que les meilleures agences internationales.</p>
+              </div>
+            </li>
+            <li class="why-item">
+              <div class="why-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/></svg>
+              </div>
+              <div>
+                <strong id="why3-title">Accompagnement sur le long terme</strong>
+                <p id="why3-desc">Nous ne livrons pas et disparaissons. Nous restons partenaires : support, maintenance, évolutions.</p>
+              </div>
+            </li>
+            <li class="why-item">
+              <div class="why-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/></svg>
+              </div>
+              <div>
+                <strong id="why4-title">Vision produit, pas prestataire</strong>
+                <p id="why4-desc">Nous pensons ROI, scalabilité et impact business — pas uniquement livraison technique.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="why-visual" aria-hidden="true">
+          <div class="wv-card wv-card--top reveal">
+            <div class="wv-label">Délai moyen de livraison</div>
+            <div class="wv-value">2–4 <span>semaines</span></div>
+            <div class="wv-bar"><div class="wv-progress" style="width:75%"></div></div>
+          </div>
+          <div class="wv-card wv-card--mid reveal">
+            <div class="wv-label">Satisfaction client</div>
+            <div class="wv-value">100<span>%</span></div>
+            <div class="wv-bar"><div class="wv-progress" style="width:100%"></div></div>
+          </div>
+          <div class="wv-card wv-card--bot reveal">
+            <div class="wv-label">Support réactif</div>
+            <div class="wv-value">24/7 <span>disponible</span></div>
+            <div class="wv-dots">
+              <span class="dot dot--green"></span>
+              <span class="dot-label">En ligne maintenant</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       PROCESS
+  ═══════════════════════════════════════════ -->
+  <section class="section process-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label" id="proc-label">Notre méthode</div>
+        <h2 class="section-title" id="proc-title">De l'idée au produit fini<br>en 4 étapes</h2>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal" data-delay="0">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3 id="step1-title">Découverte &amp; Analyse</h3>
+            <p id="step1-desc">Nous comprenons votre activité, vos objectifs et vos contraintes pour définir la solution la plus adaptée.</p>
+          </div>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step reveal" data-delay="1">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3 id="step2-title">Conception &amp; Architecture</h3>
+            <p id="step2-desc">Maquettes, architecture technique, choix des technologies — tout est validé avec vous avant le développement.</p>
+          </div>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step reveal" data-delay="2">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3 id="step3-title">Développement &amp; Tests</h3>
+            <p id="step3-desc">Code de qualité, tests rigoureux, livraisons itératives — vous suivez l'avancement en temps réel.</p>
+          </div>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step reveal" data-delay="3">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3 id="step4-title">Déploiement &amp; Suivi</h3>
+            <p id="step4-desc">Mise en production sécurisée, formation de votre équipe et support continu pour assurer votre succès.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       CTA BANNER
+  ═══════════════════════════════════════════ -->
+  <section class="section cta-banner reveal">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-content">
+          <h2 id="cta-title">Vous avez un projet en tête ?</h2>
+          <p id="cta-sub">Parlons-en. Première consultation gratuite — nous analysons votre besoin et vous proposons la solution adaptée.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg" id="cta-btn1">Démarrer maintenant</a>
+          <a href="https://wa.me/243843288129" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener" id="cta-btn2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span>WhatsApp direct</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo" aria-label="BM Tech">
+            <div class="logo-icon logo-icon--sm">
+              <svg width="28" height="28" viewBox="0 0 36 36" fill="none"><path d="M4 6H16C19.3 6 22 8.7 22 12C22 13.8 21.2 15.4 20 16.5C21.5 17.6 22.5 19.4 22.5 21.5C22.5 24.8 19.8 27.5 16.5 27.5H4V6Z" fill="white"/><path d="M4 16.5H15.5C16.6 16.5 17.5 17.4 17.5 18.5C17.5 19.6 16.6 20.5 15.5 20.5H4V16.5Z" fill="#1565D8"/><path d="M25 6L30 16L35 6" stroke="#4FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M30 16V28" stroke="#1565D8" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <span class="logo-name">BM Tech</span>
+          </a>
+          <p class="footer-desc" id="footer-desc">Entreprise technologique africaine spécialisée dans le développement web, l'IA et les logiciels métier pour les entreprises d'Afrique centrale.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/243843288129" class="social-link" aria-label="WhatsApp BM Tech" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="mailto:contact@bm-tech.online" class="social-link" aria-label="Email BM Tech">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            </a>
+            <a href="https://www.instagram.com/bm_tech_rdc?utm_source=qr" class="social-link" aria-label="Instagram BM Tech" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@bm.tech26?_r=1&amp;_t=ZP-96zU8I483t0" class="social-link" aria-label="TikTok BM Tech" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.4 2.2 1.9 3.8 4.2 4v3.1c-1.5.1-2.9-.3-4.2-1.2v6.2c0 3.3-2.7 5.9-6 5.9-3.3 0-6-2.6-6-5.9s2.7-5.9 6-5.9c.4 0 .8 0 1.2.1v3.2c-.4-.1-.8-.2-1.2-.2-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7c1.5 0 2.7-1.2 2.7-2.7V3h3.3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+          <h4 class="footer-col-title" id="footer-nav-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="fn1">Accueil</a></li>
+            <li><a href="services.html" id="fn2">Services</a></li>
+            <li><a href="portfolio.html" id="fn3">Portfolio</a></li>
+            <li><a href="about.html" id="fn4">À propos</a></li>
+            <li><a href="contact.html" id="fn5">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h4 class="footer-col-title" id="footer-svc-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#web" id="fs1">Sites &amp; Apps Web</a></li>
+            <li><a href="services.html#ia" id="fs2">Intelligence Artificielle</a></li>
+            <li><a href="services.html#cyber" id="fs3">Cybersécurité</a></li>
+            <li><a href="services.html#erp" id="fs4">ERP / CRM</a></li>
+            <li><a href="services.html#saas" id="fs5">Produits SaaS</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title" id="footer-contact-title">Contact</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+              <a href="mailto:contact@bm-tech.online">contact@bm-tech.online</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.29 6.29l1.41-1.42a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/></svg>
+              <a href="tel:+243843288129">+243 843 288 129</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+              <span id="footer-location">RDC · Cameroun · Afrique centrale</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p id="footer-copy">&copy; 2026 BM Tech — Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="legal.html" id="fl1">Mentions légales</a>
+          <a href="legal.html#privacy" id="fl2">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/script.js"></script>
+
+</body>
+</html>

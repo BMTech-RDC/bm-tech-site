@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="À propos de BM Tech — Entreprise technologique africaine fondée en RDC, spécialisée en développement web, IA, cybersécurité et logiciels métier pour l'Afrique centrale.">
+  <meta property="og:title" content="À propos | BM Tech">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bm-tech.online/about.html">
+  <title>À propos | BM Tech — Innover. Développer. Transformer.</title>
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar-wrapper" id="navbar">
+    <nav class="navbar container">
+      <a href="index.html" class="logo" aria-label="BM Tech — Accueil">
+        <div class="logo-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <path d="M4 6H16C19.3 6 22 8.7 22 12C22 13.8 21.2 15.4 20 16.5C21.5 17.6 22.5 19.4 22.5 21.5C22.5 24.8 19.8 27.5 16.5 27.5H4V6Z" fill="white"/>
+            <path d="M4 16.5H15.5C16.6 16.5 17.5 17.4 17.5 18.5C17.5 19.6 16.6 20.5 15.5 20.5H4V16.5Z" fill="#1565D8"/>
+            <path d="M25 6L30 16L35 6" stroke="#4FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M30 16V28" stroke="#1565D8" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">BM Tech</span>
+          <span class="logo-tagline">Innover. Développer. Transformer.</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links" role="navigation" aria-label="Navigation principale">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="about.html" class="nav-link active">À propos</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" onclick="setLanguage('fr')" aria-pressed="true">FR</button>
+          <button class="lang-btn" onclick="setLanguage('en')" aria-pressed="false">EN</button>
+        </div>
+        <a href="contact.html" class="btn btn-primary nav-cta">Demander un devis</a>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <div class="mobile-overlay" id="mobile-overlay" onclick="toggleMenu()"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+    <div class="container page-hero-inner">
+      <div class="page-hero-content reveal">
+        <div class="section-label">Notre histoire</div>
+        <h1 class="page-hero-title">Nous construisons la tech<br><span class="about-title-accent">africaine de demain</span></h1>
+        <p class="page-hero-sub">BM Tech n'est pas une agence web. C'est une entreprise technologique africaine qui développe des solutions digitales de référence — avec l'ambition de compter parmi les acteurs tech majeurs d'Afrique centrale.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION / VISION / APPROCHE -->
+  <section class="section about-mv-section">
+    <div class="container">
+      <div class="about-mv-grid">
+        <div class="about-mv-card reveal" data-delay="0">
+          <div class="mv-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Notre Mission</h3>
+          <p>Offrir aux entreprises et entrepreneurs africains des solutions technologiques de qualité mondiale, adaptées aux réalités locales — pour que la transformation digitale ne soit plus un privilège réservé aux grandes métropoles.</p>
+        </div>
+        <div class="about-mv-card reveal" data-delay="1">
+          <div class="mv-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Notre Vision</h3>
+          <p>Devenir l'entreprise technologique africaine de référence en Afrique centrale d'ici 2030 — en construisant des produits SaaS propriétaires, des solutions IA et des logiciels métier qui créent de la valeur durable pour le continent.</p>
+        </div>
+        <div class="about-mv-card reveal" data-delay="2">
+          <div class="mv-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Notre Approche</h3>
+          <p>Nous ne livrons pas du code — nous construisons des actifs technologiques. Chaque projet est pensé pour durer, évoluer et générer un retour sur investissement mesurable pour nos clients et partenaires.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY + TIMELINE -->
+  <section class="section about-story-section">
+    <div class="container">
+      <div class="about-story-inner">
+        <div class="about-story-content reveal">
+          <div class="section-label">Notre parcours</div>
+          <h2 class="section-title">Née d'un constat.<br>Portée par une ambition.</h2>
+          <p class="about-story-text">BM Tech est née d'un constat simple : des milliers d'entreprises africaines peinent à trouver des partenaires technologiques fiables, compétents et qui comprennent réellement leurs réalités opérationnelles.</p>
+          <p class="about-story-text">Trop souvent, les solutions disponibles sont soit trop chères et inadaptées au contexte local, soit trop basiques pour soutenir une vraie croissance. BM Tech est née pour combler ce vide.</p>
+          <p class="about-story-text">Aujourd'hui, nous accompagnons des PME, startups et organisations en RDC et au Cameroun — avec la conviction que l'Afrique centrale mérite une tech company qui lui ressemble et qui pense grand.</p>
+        </div>
+        <div class="about-story-visual reveal" data-delay="1" aria-hidden="true">
+          <div class="asv-timeline">
+            <div class="asv-point asv-point--active">
+              <div class="asv-dot"></div>
+              <div class="asv-content">
+                <span class="asv-year">2024</span>
+                <h4>Fondation de BM Tech</h4>
+                <p>Premiers projets web — sites vitrines, applications Flask, chatbots pour PME locales.</p>
+              </div>
+            </div>
+            <div class="asv-line"></div>
+            <div class="asv-point">
+              <div class="asv-dot"></div>
+              <div class="asv-content">
+                <span class="asv-year">2025</span>
+                <h4>Expansion des services</h4>
+                <p>Intégration IA, premiers projets ERP/CRM, ouverture vers le Cameroun.</p>
+              </div>
+            </div>
+            <div class="asv-line"></div>
+            <div class="asv-point asv-point--future">
+              <div class="asv-dot"></div>
+              <div class="asv-content">
+                <span class="asv-year">2026 →</span>
+                <h4>Pôle Produits SaaS</h4>
+                <p>Lancement des premiers produits propriétaires — ERP Afrique, CRM PME, solutions sectorielles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section about-stats-section">
+    <div class="container">
+      <div class="about-stats-grid reveal">
+        <div class="about-stat">
+          <div class="about-stat-value">+20</div>
+          <div class="about-stat-label">Projets réalisés</div>
+          <div class="about-stat-sub">Sites, apps, chatbots &amp; ERP</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-value">+10</div>
+          <div class="about-stat-label">Clients satisfaits</div>
+          <div class="about-stat-sub">PME, startups &amp; organisations</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-value">2</div>
+          <div class="about-stat-label">Pays couverts</div>
+          <div class="about-stat-sub">RDC &amp; Cameroun</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-value">6</div>
+          <div class="about-stat-label">Pôles d'expertise</div>
+          <div class="about-stat-sub">Web · IA · Cyber · ERP · SaaS · Conseil</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALEURS -->
+  <section class="section about-values-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Ce qui nous guide</div>
+        <h2 class="section-title">Nos valeurs fondamentales</h2>
+        <p class="section-sub">Ce que nous construisons reflète ce en quoi nous croyons.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal" data-delay="0">
+          <div class="value-num">01</div>
+          <h3>Excellence technique</h3>
+          <p>Chaque ligne de code doit être propre, sécurisée et maintenable. Nous refusons la médiocrité technique, peu importe la taille du projet.</p>
+        </div>
+        <div class="value-card reveal" data-delay="1">
+          <div class="value-num">02</div>
+          <h3>Ancrage africain</h3>
+          <p>Nous concevons pour les réalités africaines : connectivité variable, diversité des langues, contraintes budgétaires, paiement mobile.</p>
+        </div>
+        <div class="value-card reveal" data-delay="2">
+          <div class="value-num">03</div>
+          <h3>Partenariat durable</h3>
+          <p>Nous ne livrons pas et ne disparaissons pas. Nous construisons des relations long terme — le succès de nos clients est notre succès.</p>
+        </div>
+        <div class="value-card reveal" data-delay="3">
+          <div class="value-num">04</div>
+          <h3>Ambition assumée</h3>
+          <p>Nous sommes une startup — mais nous pensons et exécutons comme une tech company. L'humilité sur les moyens ne limite pas notre ambition.</p>
+        </div>
+        <div class="value-card reveal" data-delay="4">
+          <div class="value-num">05</div>
+          <h3>Transparence totale</h3>
+          <p>Pas de fausses promesses, pas de jargon. Nous expliquons ce que nous faisons, pourquoi et ce que ça implique concrètement.</p>
+        </div>
+        <div class="value-card reveal" data-delay="5">
+          <div class="value-num">06</div>
+          <h3>Impact mesurable</h3>
+          <p>Une solution qui ne génère pas de valeur réelle n'est pas une solution. Nous mesurons systématiquement l'impact de ce que nous construisons.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEUX POLES -->
+  <section class="section about-poles-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Notre modèle</div>
+        <h2 class="section-title">Deux pôles, une vision</h2>
+        <p class="section-sub">BM Tech est structurée autour de deux moteurs complémentaires de croissance.</p>
+      </div>
+      <div class="poles-grid">
+        <div class="pole-card pole-card--services reveal" data-delay="0">
+          <div class="pole-header">
+            <div class="pole-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div class="pole-tag">Revenus immédiats</div>
+          </div>
+          <h3>Pôle Services</h3>
+          <p>Développement web, applications, IA, cybersécurité, ERP/CRM et conseil — des missions clients qui génèrent du chiffre d'affaires et financent la croissance de l'entreprise.</p>
+          <ul class="pole-list">
+            <li>Projets sur mesure pour PME &amp; startups</li>
+            <li>Contrats de maintenance &amp; support</li>
+            <li>Missions de conseil &amp; transformation digitale</li>
+          </ul>
+        </div>
+        <div class="pole-card pole-card--products reveal" data-delay="1">
+          <div class="pole-header">
+            <div class="pole-icon pole-icon--accent" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="pole-tag pole-tag--accent">Actifs long terme</div>
+          </div>
+          <h3>Pôle Produits</h3>
+          <p>Développement de solutions SaaS propriétaires — ERP Afrique, CRM PME, gestion scolaire — des actifs qui génèrent des revenus récurrents et une valeur durable.</p>
+          <ul class="pole-list">
+            <li>Produits SaaS multi-tenant scalables</li>
+            <li>Abonnements &amp; licences logicielles</li>
+            <li>Partenariats &amp; revendeurs en Afrique</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner reveal">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-content">
+          <h2>Travaillons ensemble</h2>
+          <p>Vous avez un projet, une idée ou un défi digital. Nous avons l'expertise, la méthode et l'ambition pour vous accompagner.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">Démarrer une conversation</a>
+          <a href="services.html" class="btn btn-ghost btn-lg">Voir nos services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo" aria-label="BM Tech">
+            <div class="logo-icon logo-icon--sm">
+              <svg width="28" height="28" viewBox="0 0 36 36" fill="none"><path d="M4 6H16C19.3 6 22 8.7 22 12C22 13.8 21.2 15.4 20 16.5C21.5 17.6 22.5 19.4 22.5 21.5C22.5 24.8 19.8 27.5 16.5 27.5H4V6Z" fill="white"/><path d="M4 16.5H15.5C16.6 16.5 17.5 17.4 17.5 18.5C17.5 19.6 16.6 20.5 15.5 20.5H4V16.5Z" fill="#1565D8"/><path d="M25 6L30 16L35 6" stroke="#4FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M30 16V28" stroke="#1565D8" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <span class="logo-name">BM Tech</span>
+          </a>
+          <p class="footer-desc">Entreprise technologique africaine spécialisée dans le développement web, l'IA et les logiciels métier pour les entreprises d'Afrique centrale.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/243843288129" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+            <a href="mailto:contact@bm-tech.online" class="social-link" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <a href="https://www.instagram.com/bm_tech_rdc?utm_source=qr" class="social-link" aria-label="Instagram BM Tech" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@bm.tech26?_r=1&amp;_t=ZP-96zU8I483t0" class="social-link" aria-label="TikTok BM Tech" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.4 2.2 1.9 3.8 4.2 4v3.1c-1.5.1-2.9-.3-4.2-1.2v6.2c0 3.3-2.7 5.9-6 5.9-3.3 0-6-2.6-6-5.9s2.7-5.9 6-5.9c.4 0 .8 0 1.2.1v3.2c-.4-.1-.8-.2-1.2-.2-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7c1.5 0 2.7-1.2 2.7-2.7V3h3.3z"/></svg>
+            </a>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#web">Sites &amp; Apps Web</a></li>
+            <li><a href="services.html#ia">Intelligence Artificielle</a></li>
+            <li><a href="services.html#cyber">Cybersécurité</a></li>
+            <li><a href="services.html#erp">ERP / CRM</a></li>
+            <li><a href="services.html#saas">Produits SaaS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-contact-list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg><a href="mailto:contact@bm-tech.online">contact@bm-tech.online</a></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.29 6.29l1.41-1.42a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/></svg><a href="tel:+243843288129">+243 843 288 129</a></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg><span>RDC · Cameroun · Afrique centrale</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BM Tech — Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="legal.html">Mentions légales</a>
+          <a href="legal.html#privacy">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pharma Manager — Logiciel de gestion de pharmacie en Afrique. Stock médicaments, ventes, alertes péremption, fournisseurs et rapports. Solution SaaS par BM Tech.">
+  <meta property="og:title" content="Pharma Manager | Logiciel de gestion de pharmacie — BM Tech">
+  <meta property="og:type" content="website">
+  <title>Pharma Manager | Gestion de Pharmacie — BM Tech</title>
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet">
+</head>
+<body class="product-page product-page--pharma">
+
+  <!-- NAVBAR -->
+  <header class="navbar-wrapper" id="navbar">
+    <nav class="navbar container">
+      <a href="index.html" class="logo" aria-label="BM Tech">
+        <div class="logo-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <path d="M4 6H16C19.3 6 22 8.7 22 12C22 13.8 21.2 15.4 20 16.5C21.5 17.6 22.5 19.4 22.5 21.5C22.5 24.8 19.8 27.5 16.5 27.5H4V6Z" fill="white"/>
+            <path d="M4 16.5H15.5C16.6 16.5 17.5 17.4 17.5 18.5C17.5 19.6 16.6 20.5 15.5 20.5H4V16.5Z" fill="#1565D8"/>
+            <path d="M25 6L30 16L35 6" stroke="#4FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M30 16V28" stroke="#1565D8" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">BM Tech</span>
+          <span class="logo-tagline">Innover. Développer. Transformer.</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="about.html" class="nav-link">À propos</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" onclick="setLanguage('fr')">FR</button>
+          <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+        </div>
+        <a href="contact.html?service=pharma" class="btn btn-primary nav-cta">Demander une démo</a>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <div class="mobile-overlay" id="mobile-overlay" onclick="toggleMenu()"></div>
+
+  <!-- PRODUCT HERO -->
+  <section class="product-hero product-hero--pharma">
+    <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+    <div class="container product-hero-inner">
+      <div class="product-hero-content reveal">
+        <div class="product-eyebrow">
+          <div class="product-logo-badge product-logo-badge--pharma">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2z" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <span>Pharma Manager</span>
+          <div class="product-version-tag">v1.0 · Beta</div>
+        </div>
+        <h1 class="product-hero-title">Gérez votre pharmacie.<br><span class="pharma-accent">Simplement. Efficacement.</span></h1>
+        <p class="product-hero-sub">Le premier logiciel de gestion de pharmacie conçu pour l'Afrique centrale. Stock en temps réel, alertes automatiques, rapports détaillés — tout ce dont vous avez besoin, sans complexité inutile.</p>
+        <div class="product-hero-actions">
+          <a href="contact.html?service=pharma&type=demo" class="btn btn-primary btn-lg">Demander une démo gratuite</a>
+          <a href="#features" class="btn btn-ghost btn-lg">Voir les fonctionnalités</a>
+        </div>
+        <div class="product-trust-bar">
+          <div class="ptb-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5"/></svg>
+            <span>Données sécurisées</span>
+          </div>
+          <div class="ptb-sep" aria-hidden="true"></div>
+          <div class="ptb-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span>Application web</span>
+          </div>
+          <div class="ptb-sep" aria-hidden="true"></div>
+          <div class="ptb-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span>Support inclus</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard preview -->
+      <div class="product-hero-visual reveal" data-delay="1" aria-hidden="true">
+        <div class="product-dashboard">
+          <div class="pd-header">
+            <div class="pd-header-left">
+              <div class="pd-logo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2z" stroke="#0A84FF" stroke-width="1.5"/><path d="M12 8v8M8 12h8" stroke="#0A84FF" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Pharma Manager
+              </div>
+            </div>
+            <div class="pd-header-right">
+              <div class="pd-alert-dot"></div>
+              <div class="pd-avatar">PM</div>
+            </div>
+          </div>
+          <div class="pd-body">
+            <div class="pd-stats-row">
+              <div class="pd-stat-card">
+                <div class="pd-stat-label">Médicaments</div>
+                <div class="pd-stat-val" style="color:#0A84FF">1 247</div>
+                <div class="pd-stat-change pd-stat-change--up">+12 aujourd'hui</div>
+              </div>
+              <div class="pd-stat-card">
+                <div class="pd-stat-label">Ventes du jour</div>
+                <div class="pd-stat-val" style="color:#28CA41">98</div>
+                <div class="pd-stat-change pd-stat-change--up">+8%</div>
+              </div>
+              <div class="pd-stat-card">
+                <div class="pd-stat-label">Alertes stock</div>
+                <div class="pd-stat-val" style="color:#FF9F0A">3</div>
+                <div class="pd-stat-change pd-stat-change--warn">À traiter</div>
+              </div>
+            </div>
+            <div class="pd-section-title">Stock critique</div>
+            <div class="pd-table">
+              <div class="pd-row pd-row--header">
+                <span>Médicament</span><span>Stock</span><span>Statut</span>
+              </div>
+              <div class="pd-row">
+                <span>Paracétamol 500mg</span><span>12 boîtes</span>
+                <span class="pd-status pd-status--warn">Faible</span>
+              </div>
+              <div class="pd-row">
+                <span>Amoxicilline 250mg</span><span>3 boîtes</span>
+                <span class="pd-status pd-status--danger">Critique</span>
+              </div>
+              <div class="pd-row">
+                <span>Ibuprofène 400mg</span><span>45 boîtes</span>
+                <span class="pd-status pd-status--ok">OK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLÈME / SOLUTION -->
+  <section class="section product-problem-section">
+    <div class="container">
+      <div class="problem-solution-grid reveal">
+        <div class="problem-col">
+          <div class="ps-label ps-label--problem">Le problème</div>
+          <h3>Gérer une pharmacie sans logiciel, c'est coûteux</h3>
+          <ul class="ps-list ps-list--problem">
+            <li>Médicaments périmés non détectés = pertes financières</li>
+            <li>Ruptures de stock imprévues = clients perdus</li>
+            <li>Inventaire manuel = heures perdues chaque semaine</li>
+            <li>Pas de visibilité sur les ventes et la rentabilité</li>
+            <li>Gestion fournisseurs désorganisée = sur-commandes</li>
+          </ul>
+        </div>
+        <div class="solution-col">
+          <div class="ps-label ps-label--solution">Notre solution</div>
+          <h3>Pharma Manager automatise tout ça</h3>
+          <ul class="ps-list ps-list--solution">
+            <li>Alertes automatiques avant péremption</li>
+            <li>Seuils de stock configurables avec notifications</li>
+            <li>Inventaire en temps réel, à tout moment</li>
+            <li>Rapports de ventes et de rentabilité automatiques</li>
+            <li>Gestion fournisseurs et historique des commandes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FONCTIONNALITÉS -->
+  <section class="section product-features-section" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Fonctionnalités</div>
+        <h2 class="section-title">Tout ce dont votre pharmacie a besoin</h2>
+        <p class="section-sub">Chaque module est conçu pour être simple à utiliser, même sans formation technique.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card feature-card--pharma reveal" data-delay="0">
+          <div class="feature-icon" style="background:rgba(10,132,255,0.1);color:#0A84FF">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z" stroke="currentColor" stroke-width="1.5"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Gestion du Stock</h3>
+          <p>Inventaire complet en temps réel. Ajout, modification et suivi de chaque médicament avec quantités, prix d'achat et prix de vente.</p>
+        </div>
+        <div class="feature-card feature-card--pharma reveal" data-delay="1">
+          <div class="feature-icon" style="background:rgba(40,202,65,0.1);color:#28CA41">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="1.5"/><path d="M16 10a4 4 0 01-8 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Caisse & Ventes</h3>
+          <p>Interface de vente rapide et intuitive. Scan ou recherche du médicament, ajout au panier, calcul automatique et reçu imprimable.</p>
+        </div>
+        <div class="feature-card feature-card--pharma reveal" data-delay="2">
+          <div class="feature-icon" style="background:rgba(255,159,10,0.1);color:#FF9F0A">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Alertes Intelligentes</h3>
+          <p>Notifications automatiques pour les médicaments proches de la péremption et pour les niveaux de stock critiques. Zéro surprise.</p>
+        </div>
+        <div class="feature-card feature-card--pharma reveal" data-delay="3">
+          <div class="feature-icon" style="background:rgba(123,97,255,0.1);color:#7B61FF">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Gestion Fournisseurs</h3>
+          <p>Annuaire complet de vos fournisseurs, historique des commandes, suivi des livraisons et gestion des conditions tarifaires.</p>
+        </div>
+        <div class="feature-card feature-card--pharma reveal" data-delay="4">
+          <div class="feature-icon" style="background:rgba(0,212,255,0.1);color:#00D4FF">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><line x1="18" y1="20" x2="18" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="20" x2="12" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="20" x2="6" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Rapports & Statistiques</h3>
+          <p>Tableau de bord en temps réel, chiffre d'affaires journalier/mensuel, produits les plus vendus, marges et analyse de rentabilité.</p>
+        </div>
+        <div class="feature-card feature-card--pharma reveal" data-delay="5">
+          <div class="feature-icon" style="background:rgba(255,59,48,0.1);color:#FF3B30">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Multi-Pharmacies</h3>
+          <p>Gérez plusieurs points de vente depuis un seul compte. Vision consolidée du stock et des ventes de toutes vos succursales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section product-pricing-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Tarifs</div>
+        <h2 class="section-title">Un investissement rentable dès le premier mois</h2>
+        <p class="section-sub">Pas de frais cachés. Pas d'engagement à long terme. Annulez quand vous voulez.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal" data-delay="0">
+          <div class="pricing-header">
+            <div class="pricing-name">Starter</div>
+            <div class="pricing-price"><span class="pricing-amount">$29</span><span class="pricing-period">/mois</span></div>
+            <p class="pricing-desc">Pour une pharmacie unique qui démarre sa digitalisation.</p>
+          </div>
+          <ul class="pricing-features">
+            <li>1 pharmacie</li>
+            <li>Gestion stock illimitée</li>
+            <li>Caisse & ventes</li>
+            <li>Alertes péremption</li>
+            <li>Rapports basiques</li>
+            <li>Support email</li>
+          </ul>
+          <a href="contact.html?service=pharma&plan=starter" class="btn btn-outline btn-pricing">Commencer</a>
+        </div>
+        <div class="pricing-card pricing-card--featured reveal" data-delay="1">
+          <div class="pricing-badge-top">Recommandé</div>
+          <div class="pricing-header">
+            <div class="pricing-name">Pro</div>
+            <div class="pricing-price"><span class="pricing-amount">$59</span><span class="pricing-period">/mois</span></div>
+            <p class="pricing-desc">Pour les pharmacies qui veulent une gestion complète.</p>
+          </div>
+          <ul class="pricing-features">
+            <li>Jusqu'à 3 pharmacies</li>
+            <li>Tout le plan Starter</li>
+            <li>Gestion fournisseurs</li>
+            <li>Rapports avancés</li>
+            <li>Export PDF/Excel</li>
+            <li>Support WhatsApp prioritaire</li>
+          </ul>
+          <a href="contact.html?service=pharma&plan=pro" class="btn btn-primary btn-pricing">Démarrer l'essai</a>
+        </div>
+        <div class="pricing-card reveal" data-delay="2">
+          <div class="pricing-header">
+            <div class="pricing-name">Réseau</div>
+            <div class="pricing-price"><span class="pricing-amount">Sur devis</span></div>
+            <p class="pricing-desc">Pour les chaînes et groupements de pharmacies.</p>
+          </div>
+          <ul class="pricing-features">
+            <li>Pharmacies illimitées</li>
+            <li>Tout le plan Pro</li>
+            <li>Dashboard consolidé</li>
+            <li>API & intégrations</li>
+            <li>Formation équipe</li>
+            <li>Support dédié 24/7</li>
+          </ul>
+          <a href="contact.html?service=pharma&plan=reseau" class="btn btn-outline btn-pricing">Nous contacter</a>
+        </div>
+      </div>
+      <p class="pricing-note reveal">🎁 <strong>Offre de lancement :</strong> 30 jours d'essai gratuit sur tous les plans · Aucune carte bancaire requise</p>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-banner reveal">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-content">
+          <h2>Prêt à moderniser votre pharmacie ?</h2>
+          <p>Demandez une démonstration gratuite. Nous vous montrons Pharma Manager en action en 30 minutes — adapté à votre contexte.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html?service=pharma&type=demo" class="btn btn-primary btn-lg">Demander ma démo gratuite</a>
+          <a href="https://wa.me/243843288129?text=Bonjour,%20je%20veux%20une%20demo%20de%20Pharma%20Manager" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp direct
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER simplifié -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding-top:var(--space-8)">
+        <p>
+          <a href="index.html" style="color:var(--color-primary-light)">BM Tech</a> ·
+          <a href="portfolio.html" style="color:var(--color-text-muted);margin:0 var(--space-3)">Nos produits</a> ·
+          <a href="school-manager.html" style="color:var(--color-text-muted)">School Manager</a>
+        </p>
+        <p>&copy; 2026 BM Tech — Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/script.js"></script>
+</body>
+</html>
